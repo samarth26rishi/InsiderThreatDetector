@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🔐 Insider Threat Detection System  
 ### Behavioral Anomaly Detection using Machine Learning & Explainable AI
 
@@ -208,4 +207,4 @@ Undergraduate Project — Cybersecurity & Machine Learning
 =======
 # InsiderThreatDetector
 Multi-layer Insider Threat Detection System using Isolation Forest, psychometric risk modeling, behavioral baselines, organizational drift detection, and SHAP explainability — built with Python and Streamlit.
->>>>>>> 664e3b6521ba9b9ed181e67325d3c3d62cb93c14
+
