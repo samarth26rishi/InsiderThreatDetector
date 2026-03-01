@@ -1,0 +1,50 @@
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# ==============================
+# Model Artifacts (DO NOT PUSH)
+# ==============================
+
+*.pkl
+*.npy
+
+# ==============================
+# Runtime Generated Files
+# ==============================
+
+email_cumulative.csv
+usb_cumulative.csv
+personal_baseline.csv
+
+# ==============================
+# Streamlit
+# ==============================
+
+.streamlit/
+
+# ==============================
+# OS Files
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+email.csv
+# Simulation data folders
+month_*_email/
+month_*_usbfiles/
