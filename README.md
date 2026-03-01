@@ -146,7 +146,30 @@ file_usb_activity.csv
 psychometric.csv
 
 ---
+## 🧪 Coordinated Attack Simulation
 
+To evaluate system robustness, a coordinated insider threat scenario was simulated:
+
+- Month 0 → Baseline training
+- Month 1 → Normal monitoring
+- Month 2 → Coordinated attack injected
+
+Attack Configuration:
+- Begins on Day 15 of Month 2
+- 40% of users participate
+- Simulated malicious behaviors include:
+  - High external email ratio (60–90%)
+  - Increased attachment sending
+  - Elevated BCC usage
+  - Large spike in sensitive file access
+  - Increased USB insertions
+
+This allows evaluation of:
+- Individual anomaly detection
+- Personal historical deviation
+- Organizational drift detection
+- Coordinated large-scale insider activity
+  ---
 ## ▶️ How To Run
 
 ### 1️⃣ Install Dependencies
@@ -160,19 +183,22 @@ streamlit run app.py
 
 Month 0 will build the baseline automatically.  
 Month 1+ will begin monitoring and detecting anomalies.
-
 ---
+## 📂 Datasets Used
 
-## 📚 Dataset
+This project uses publicly available datasets for initial baseline modeling:
 
-This project uses:
+- 📧 Email Dataset: [https://www.kaggle.com/datasets/nitishabharathi/cert-insider-threat?select=email.csv]
+- 🧠 Psychometric Dataset: [https://www.kaggle.com/datasets/nitishabharathi/cert-insider-threat?select=psychometric.csv]
 
-- Public email activity dataset (Kaggle)
-- Public file/USB activity dataset (Kaggle)
-- Psychometric traits mapped to users for behavioral modeling
+These datasets were used to:
 
-Datasets are used strictly for academic and research purposes.
+- Train the initial behavioral baseline (Month 0)
+- Extract email activity features
+- Integrate psychometric personality factors (OCEAN model)
 
+All coordinated attack scenarios were synthetically simulated 
+for research and demonstration purposes.
 ---
 
 ## 🎓 Academic Context
